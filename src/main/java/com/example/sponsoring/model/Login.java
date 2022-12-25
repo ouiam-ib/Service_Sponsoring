@@ -1,18 +1,26 @@
 package com.example.sponsoring.model;
 
+import lombok.Data;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import javax.persistence.*;
+
+@Table(name="login")
 public class Login {
+    @Id
     private int id_log;
+    @Column(name="username")
     private String login;
-    private String password;
+    @Column(name="passwd")
+    private String passwd;
 
     public Login(){
 
     }
 
-    public Login(int id_log, String login, String password){
-        this.id_log = id_log;
+    public Login(String login, String password){
         this.login = login;
-        this.password = password;
+        this.passwd = password;
     }
 
     public int getId_log() {
@@ -24,7 +32,7 @@ public class Login {
     }
 
     public String getPassword() {
-        return password;
+        return passwd;
     }
 
     public void setId_log(int id_log) {
@@ -36,6 +44,6 @@ public class Login {
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.passwd = password;
     }
 }

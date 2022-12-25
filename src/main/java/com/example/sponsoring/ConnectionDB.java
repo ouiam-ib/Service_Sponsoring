@@ -1,4 +1,4 @@
-package com.example.sponsoring.repository;
+package com.example.sponsoring;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
