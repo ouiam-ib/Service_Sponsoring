@@ -1,4 +1,5 @@
-package com.example.sponsoring.repository;
+package com.example.sponsoring;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import java.sql.Connection;
 import org.springframework.web.bind.annotation.GetMapping;

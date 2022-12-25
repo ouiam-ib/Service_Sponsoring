@@ -1,5 +1,6 @@
 package com.example.sponsoring.model;
-import com.example.sponsoring.repository.ConnectionDB;
+
+import com.example.sponsoring.ConnectionDB;
 
 import java.sql.*;
 import java.util.Scanner;
